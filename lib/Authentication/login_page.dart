@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
           key: formKey,
           child: Container(
             padding: EdgeInsets.all(50),
-            decoration: BoxDecoration(color: Theme.of(context).accentColor),
+            decoration: BoxDecoration(color: Theme.of(context).primaryColor),
             child: Column(
               children: <Widget>[
                 100.heightBox,
@@ -41,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
                     .text
                     .bold
                     .size(50)
-                    .color(Theme.of(context).primaryColor)
+                    .color(Theme.of(context).accentColor)
                     .make(),
                 60.heightBox,
 
@@ -143,7 +143,7 @@ class _LoginPageState extends State<LoginPage> {
                     },
                     child: "Don't Have an Account ?"
                         .text
-                        .color(Theme.of(context).primaryColor)
+                        .color(Theme.of(context).accentColor)
                         .size(20)
                         .make())
               ],

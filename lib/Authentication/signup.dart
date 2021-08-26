@@ -27,16 +27,14 @@ class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return Material(
+      color: Theme.of(context).accentColor,
       child: GestureDetector(
         onTap: () => FocusScope.of(context).unfocus(),
         child: Form(
           key: formKey,
           child: Container(
             padding: EdgeInsets.all(50),
-            color: Theme.of(context).accentColor,
-            // decoration: BoxDecoration(
-            //     gradient: LinearGradient(
-            //         colors: [Color(0xffE8CBC0), Color(0xff636FA4)])),
+            color: Theme.of(context).primaryColor,
             child: Column(
               children: <Widget>[
                 100.heightBox,
@@ -44,7 +42,7 @@ class _SignUpState extends State<SignUp> {
                     .text
                     .bold
                     .size(50)
-                    .color(Theme.of(context).primaryColor)
+                    .color(Theme.of(context).accentColor)
                     .make(),
                 60.heightBox,
 
@@ -155,7 +153,7 @@ class _SignUpState extends State<SignUp> {
                     },
                     child: "Already Have an Account ?"
                         .text
-                        .color(Theme.of(context).primaryColor)
+                        .color(Theme.of(context).accentColor)
                         .size(20)
                         .make())
               ],
